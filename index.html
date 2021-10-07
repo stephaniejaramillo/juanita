@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La Tienda de Juanita 2.0</title>
+	<style>
+
+		.boton{
+position: absolute;
+top: 50px;
+left: 350px;
+height:100px;
+width:300px;
+background:#BE81F7;
+color: black;
+align-content: center;
+		}
+		.boton1{
+position: absolute;
+top: 100px;
+left: 600px;
+height:150px;
+width:250px;
+background:#BE81F7;
+color: black;
+align-content: center;
+		}
+		.papitas{
+			position: absolute;
+top: 450px;
+left: 645px;
+height:50px;
+width:150px;
+background:#BE81F7;
+color: black;
+align-content: center;
+
+		}
+		.chocolatina{
+			position: absolute;
+top: 480px;
+left: 645px;
+height:50px;
+width:150px;
+background:#BE81F7;
+color: black;
+align-content: center;
+
+
+		}
+
+		.doritos{
+			position: absolute;
+top: 510px;
+left: 645px;
+height:50px;
+width:150px;
+background:#BE81F7;
+color: black;
+align-content: center;
+
+
+		}
+.producto1{
+			position: absolute;
+top: 300px;
+left: 660px;
+height:10px;
+width:100px;
+
+		}
+		.producto2{
+			position: absolute;
+top: 325px;
+left: 660px;
+height:10px;
+width:100px;
+
+
+
+		}
+		.producto3{
+position: absolute;
+top: 350px;
+left: 660px;
+height:10px;
+width:100px;
+
+
+
+		}
+
+				.producto4{
+position: absolute;
+top: 375px;
+left: 660px;
+height:10px;
+width:100px;
+
+
+
+		}
+
+	</style>
+</head>
+<body>
+<form>
+<div><input class="producto1" type="text" id="producto" placeholder="producto"></div>	
+<div><input class="producto2" type="text" id="cantidad" placeholder="cantidad"></div>
+<div><input class="producto3" type="text" id="precio" placeholder="precio"></div>
+<div><input class="producto4" type="text" id="midinero" placeholder="midinero" class="p1"></div>
+
+<div class="papitas">papitas=3500</div>
+<div class="chocolatina ">chocolatina=2500</div>
+<div class="doritos">doritos=1500</div>
+
+</form>
+
+<div class="boton1" onclick="calcu()" id="control"></div>
+
+<script>
+function calcu()  {
+x=Number(cantidad.value)
+y=Number(precio.value)
+z=Number(midinero.value)
+a=(producto.value)
+		
+		resu=x*y
+		holi=resu-z
+		control.innerHTML="compraste:"+a+"y debes pagar"+resu+"y su devuelta es:"+holi
+	}
+ 
+</script>
+
+
+
+</body>
+</html>
